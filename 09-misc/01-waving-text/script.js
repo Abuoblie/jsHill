@@ -6,8 +6,12 @@
     // your code here
    const doc =  document.getElementById("target");
    const txt = doc.textContent;
-   doc.innerHTML = txt.replace(/\S/g, "<span class='letter'>$&</span>");
-   
-   
+   doc.innerHTML= txt.split(/\S/g, "<span class='char'>$&</span>");
+  // let  text = txt.split("")
+   let i = 3, j=0;
+   doc.innerHTML= " "
+ 
+  
+
 
 })();

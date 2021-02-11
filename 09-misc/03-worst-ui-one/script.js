@@ -4,5 +4,11 @@
 (() => {
 
     // your code here
+    let doc = document.getElementById("slider");
+    doc.addEventListener("input", ()=>{
+        document.getElementById("target").innerHTML = "0"+doc.value;
+    }  );
+    
+
 
 })();

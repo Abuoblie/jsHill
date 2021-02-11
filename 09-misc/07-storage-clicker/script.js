@@ -4,5 +4,13 @@
 (() => {
 
     // your code here
-
+    let val = localStorage.getItem("counter");
+     document.getElementById("increment").addEventListener('click',
+     ()=>{
+         val++;
+         localStorage.setItem("counter", val);
+         console.log(localStorage);
+         document.getElementById("target").innerHTML = localStorage.getItem("counter");
+     })
+     document.getElementById("target").innerHTML = localStorage.getItem("counter");
 })();
